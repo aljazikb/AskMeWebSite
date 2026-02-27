@@ -1,22 +1,36 @@
-import './App.css'
 import AnswerCard from './Component/AnswerCard.jsx';
 import Card from './Component/Card.jsx';
+import Background from './background.jsx';
+
+
 
 
 function App() {
 
   return (
     <>
-    <div  className=" mt-15 justify-items-center min-h-screen flex flex-col">
-      <Card />
-      <AnswerCard />
+   
+  <div className="w-full h-screen relative flex justify-center items-center bg-black overflow-hidden">
+    <Background
+      colorStops={["#7cff67","#B19EEF","#5227FF"]}
+      blend={0.5}
+      amplitude={1.0}
+      speed={1}/>
 
-        <div className=" mt-auto ">
-          <p className="text-center text-gray-500 dark:text-gray-400">Build By <a className="text-blue-600 dark:text-sky-400" href="https://aljazikb.github.io/myPortfolio">Aljazy Banaemah</a></p>
-        </div>
+     
+     <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">
+        <Card />
+        <AnswerCard />
+      </div>
 
-  </div>
+
+        <div className="absolute bottom-4 w-full">
+          <p className="text-center text-gray-500 dark:text-gray-400"> Create By <a className="text-blue-600 dark:text-sky-400" href="https://aljazikb.github.io/myPortfolio">Aljazy Banaemah</a>
+          </p>
+        </div> 
+</div>
    </>
+
   )
 }
 
