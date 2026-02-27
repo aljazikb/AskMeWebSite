@@ -27,7 +27,9 @@ function App() {
         <div className="absolute bottom-4 w-full">
           <p className="text-center text-gray-500 dark:text-gray-400"> Create By <a className="text-blue-600 dark:text-sky-400" href="https://aljazikb.github.io/myPortfolio">Aljazy Banaemah</a>
           </p>
-        </div> 
+        </div>
+    
+ 
 </div>
    </>
 
