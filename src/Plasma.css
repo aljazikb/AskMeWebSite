@@ -1,0 +1,10 @@
+
+
+.plasma-container {
+  position: relative;
+  width: 100%;
+  height: 100dvh;  /* ← key change */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
