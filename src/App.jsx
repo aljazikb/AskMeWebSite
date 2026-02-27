@@ -11,14 +11,14 @@ function App() {
     <>
    
   <div className="w-full min-h-screen flex flex-col justify-start items-center bg-black overflow-hidden">
-     <div className="absolute inset-0">
-        <Background className= "h-full  w-full absolute top-0 left-0      "
-          colorStops={["#7cff67","#B19EEF","#5227FF"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={1}/>
+     <div className="absolute inset-0 ">
+      <Background 
+        colorStops={["#7cff67","#B19EEF","#5227FF"]}
+        blend={0.5}
+        amplitude={1.0}
+        speed={1}/>
+
      </div>
-     
      <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">
         <Card />
         <AnswerCard />
