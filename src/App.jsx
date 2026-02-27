@@ -10,7 +10,7 @@ function App() {
   return (
     <>
    
-  <div className="w-full h-screen relative flex justify-center items-center bg-black overflow-hidden">
+  <div className="w-full min-h-[100dvh] relative flex justify-center items-center bg-black overflow-hidden">
     <Background
       colorStops={["#7cff67","#B19EEF","#5227FF"]}
       blend={0.5}
