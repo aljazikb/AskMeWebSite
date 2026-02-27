@@ -10,15 +10,16 @@ function App() {
   return (
     <>
    
-  <div className="w-full min-h-screen flex flex-col justify-start items-center bg-black overflow-hidden">
-     <div className="absolute inset-0 ">
+  <div className="grid grid-cols-1 h-screen w-screen overflow-hidden relative justify-center items-center pt-0 mt-0">
+    
+    <div className="md:mt-0 pt-0 absolute inset-0">
       <Background 
         colorStops={["#7cff67","#B19EEF","#5227FF"]}
         blend={0.5}
         amplitude={1.0}
         speed={1}/>
-
-     </div>
+    </div>
+     
      <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">
         <Card />
         <AnswerCard />
