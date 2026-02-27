@@ -10,26 +10,31 @@ function App() {
   return (
     <>
    
-  <div className="w-full min-h-screen relative flex justify-center items-center bg-black overflow-hidden">
-    <Background
+<div className="w-full min-h-screen relative bg-black overflow-hidden ">
+
+    <Background className="absolute inset-0 -z-10"
       colorStops={["#7cff67","#B19EEF","#5227FF"]}
       blend={0.5}
       amplitude={1.0}
-      speed={1}/>
+      speed={1}
+    />
 
-     
-     <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">
-        <Card />
-        <AnswerCard />
-      </div>
+  
+    <div className="relative flex flex-col items-center justify-center min-h-screen space-y-6 py-20">
+      <Card />
+      <AnswerCard />
+    </div>
 
+   
+    <div className="w-full pb-4">
+      <p className="text-center text-gray-500 dark:text-gray-400">
+        Create By{" "}
+        <a className="text-blue-600 dark:text-sky-400" href="https://aljazikb.github.io/myPortfolio">
+          Aljazy Banaemah
+        </a>
+      </p>
+    </div>
 
-        <div className="absolute bottom-4 w-full">
-          <p className="text-center text-gray-500 dark:text-gray-400"> Create By <a className="text-blue-600 dark:text-sky-400" href="https://aljazikb.github.io/myPortfolio">Aljazy Banaemah</a>
-          </p>
-        </div>
-    
- 
 </div>
    </>
 
